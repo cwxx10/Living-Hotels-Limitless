@@ -1,0 +1,183 @@
+@charset "UTF-8";
+html{
+    font-family: sans-serif;
+    background: #f6f6f6;
+}
+.button{
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+    border-radius: 6px;
+    color: #fff;
+    height: 48px;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.1em 1em 1em 1em;
+}
+.button:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+    transform: translateY(-2px);
+}
+.button1{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(84, 105, 212);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;
+    transition: background-color .24s,box-shadow .24s;
+
+    text-align: center;
+    text-decoration: none;
+    padding: 1.7em 1em 1em 1em;
+}
+.button1:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+    transform: translateY(-2px);
+}
+.clearfix:after, row:after{ 
+    content:'';
+    display: block;
+    clear:both;
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-family: "Oxygen";
+}
+.top-header{
+    text-align: center;
+}
+#top-header-logo{
+    margin: .5em;
+}
+.top-nav{ 
+    background: #612674;
+    text-align: center;
+    margin-top: 2em;
+}
+.top-nav ul{ 
+    margin: 0;
+    padding: 1em; 
+    list-style: none;
+}
+.top-nav a{ 
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    padding: 1em;
+}
+.top-nav a:hover { 
+    background: #7c3792;
+}
+.top-content{
+    text-align: center;
+    padding: 2em;
+}
+.top-content-title{
+    color: #7c3792;
+    font-size: 2.5em;
+    letter-spacing: 0.13em;
+}
+.top-content-subtitle{
+    color: #a87bb7;
+    margin-top: 2em;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.middle-content{
+    text-align: center;
+    padding: 3em;
+}
+.middle-content-title{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #7c3792;
+}
+#middle-content-icon{
+    width: 2.5em;
+}
+.middle-content p{
+    line-height: 1.5em;
+    color: #333;
+    font-size: 1.5em;
+}
+hr{
+    color: white;
+    border: 1px transparent rgb(158, 124, 144);
+    width: 500px;
+}
+footer{
+    background: #e9e9e9;
+    text-align: center;
+    padding: 1em;
+}
+footer span[class^=icon]{ 
+    font-size:2em;
+    color: #7c3792;
+}
+.top-content span{
+    font-size:3em;
+    color: #f8f8f8;
+}
+
+@media screen and (min-width: 48.75em){
+    html{
+        background: white;
+    }
+    .top-content{
+        background: #521a66;
+    }
+    .top-content-title, .top-content-subtitle{ 
+        color: white;
+    }
+    #top-header-logo{
+        width: 300px;
+        position: relative;
+        left: 14%;
+    }
+    .top-nav{
+        background: transparent;
+        float: right;  
+    }
+    .top-nav li{
+        display: inline-block;
+        padding: 0;
+    }
+    .top-nav a{
+        color: #713a84;
+        font-size: 1.1em; 
+    }
+    .top-nav a:hover{
+        color: white; 
+    }
+
+    .middle-content-cow{
+        width:44%;
+        margin: 3%;
+        float: left;
+    }
+} 
+
+@media screen and (min-width: 62.5em){
+    .top-content{
+        background: #a361cf url(../images/bg_topo_1198x670.jpg);
+        background-size: 100% 100%;
+    }
+    .top-content span{
+        color: white;
+    }
+}
